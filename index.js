@@ -58,7 +58,7 @@ function reduceToAnyTrue(sourceArray) {
     let boolean;
     for (let i = 0; i < sourceArray.length; i++) {
         boolean = !!sourceArray[i]
-        if(boolean === true) break;
+        if(boolean) break;
     }
     return boolean
 }
