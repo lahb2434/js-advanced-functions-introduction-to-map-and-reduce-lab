@@ -49,7 +49,7 @@ function reduceToAllTrue(sourceArray) {
     let boolean;
     for (let i = 0; i < sourceArray.length; i++) {
         boolean = Boolean(sourceArray[i])
-        if(boolean === false) break;
+        if(!boolean) break;
     }
     return boolean
 }
